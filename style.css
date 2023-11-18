@@ -1,166 +1,162 @@
 
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-   select{
-    margin-left: 2%;
-    width: max-content;
-    height: 6%;
-    font-size: large;
-  }
-  input{
-    margin-left: 2%;
-  }
- span{
-    position: relative;
-    font-size: 130%;
-    font-weight: 200;
- }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+ select{
+  margin-left: 2%;
+  width: max-content;
+  height: 6%;
+  font-size: large;
+}
+input{
+  margin-left: 2%;
+}
+span{
+  position: relative;
+  font-size: 130%;
+  font-weight: 200;
+}
 
- .menuTab
+.menuTab
 {
+  position: fixed;
+  width: 100%;
+  height: 12vh;
   
-    width: 100%;
-    height: 12vh;
-    
-    background-color: rgb(4, 1, 15);
-  
+  background-color: rgb(4, 1, 15);
+
 }
 .menuTabList{
 
-    width: 100%;
-    height: 100%;
-    position: relative;
-    list-style: none;
-    display: flex;
-    text-align: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  list-style: none;
+  display: flex;
+  text-align: left;
 }
 
 .menutab-item{
-    color: plum;
-    margin: 5vh;
-    font-size: 30px;
-    cursor: pointer;
+  color: plum;
+  margin: 5vh;
+  font-size: 30px;
+  cursor: pointer;
 }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    min-height: 88vh;
-    width: 100%;
-   
-  }
-  .container img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center ;
-  }
-  
-
-.contentBox{
-  position: relative;
-  max-width: 65%;
-  width: 90%;
-  height: 60%;
-  min-height: 65vh;
-  background: transparent;
-  border: 0.1vw solid rgba(255,255,255,0.5);
-  border-radius: 30px;
-  backdrop-filter: blur(7px);
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  min-height: 100vh; 
+  width: 100%;
+  background: url('images/bgfoto.jpg') center/cover fixed; 
+  padding-top: 12vh; 
+}
+
+
+.contentBox{
+position: relative;
+max-width: 65%;
+width: 90%;
+height: 60%;
+min-height: 65vh;
+background: transparent;
+border: 0.1vw solid rgba(255,255,255,0.5);
+border-radius: 30px;
+backdrop-filter: blur(7px);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .formBox{
-   
-  width: 100%;
-  height: 100%;
+ 
+width: 100%;
+height: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
   
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-    
 }
 
 .inputBox{
 
-    overflow: hidden;
-    position: relative;
-    margin-left: 30%;
-    margin-top: 2.5%;
-    width: 100%;
-    color: plum;
+  overflow: hidden;
+  position: relative;
+  margin-left: 30%;
+  margin-top: 2.5%;
+  width: 100%;
+  color: plum;
 }
 
 #phoneCodesSelect{
-    width: 6%;
-    height: 23px; 
+  width: 6%;
+  height: 23px; 
 }
-  
+
 #radioOpt{
 
- display: flex;
+display: flex;
 
 }
 
 #registerButton {
-    width: fit-content;
-    padding: 10px 10px;
-    background-color: plum;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  width: fit-content;
+  padding: 10px 10px;
+  background-color: plum;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
-  
+
 #registerButton:hover {
-    background-color: rgb(92, 42, 88);
+  background-color: rgb(92, 42, 88);
 }
 
 
 
 @media (max-width: 600px) {
- 
 
-  .menuTab{
-    width: 100%;
-    margin: 0; 
 
-  }
-  .menuTabList{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .menutab-item{
-    width: 80%;
-    margin: 0%;
-    padding: 0%;
-    font-size: 90%;
-  }
-  .formBox {
-    width: 80%;
-    margin: 0; 
-  }
-  .inputBox {
-   
-    margin-left: 0; 
-    width: 100%; 
-  }
+.menuTab{
+  width: 100%;
+  margin: 0; 
+
 }
-  
-  
+.menuTabList{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.menutab-item{
+  width: 80%;
+  margin: 0%;
+  padding: 0%;
+  font-size: 90%;
+}
+.formBox {
+  width: 80%;
+  margin: 0; 
+}
+.inputBox {
+ 
+  margin-left: 0; 
+  width: 100%; 
+}
+}
 
 
-  
+
+
+
