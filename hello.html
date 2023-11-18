@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Page</title>
+</head>
+<body>
+  <script>
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const title = urlParams.get('title');
+
+    const h1 = document.createElement('h1');
+    h1.textContent = 'hello ' + title;
+    document.body.appendChild(h1);
+  </script>
+</body>
+</html>

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menuItems.forEach(item => {
       item.addEventListener('click', function() {
         const title = this.getAttribute('data-title');
-        window.open(`hello_${title}.html`, '_blank'); 
+        window.open(`hello.html?title=${title}`, '_blank');
       });
     });
 
@@ -102,7 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
         isOk += 1;
     }
     
-    if ((isnull === false ) && ( !emailInput.includes('@') ||  !emailInput.includes('.com'))) {
+    if ((isnull === false ) && ( !emailInput.includes('@') ||  !emailInput.includes('.com'))) 
+    {
        alert("Please enter a valid email!");
        isOk +=1;
     } 
@@ -110,8 +111,9 @@ document.addEventListener('DOMContentLoaded', function() {
      const phoneValidationMessage = document.getElementById("phoneValidationMessage");
      const phoneCodesSelect = document.getElementById("phoneCodesSelect");
 
-    if ((isnull=== false) && (phoneCodesSelect.value !== "+90" || phoneInput.value.length !== 10 || isNaN(phoneInput.value))) {
-      alert("Phone number should have +90 code and should be 10 correct format");
+    if ((isnull=== false) && (phoneCodesSelect.value !== "+90" || phoneInput.value.length !== 10 || isNaN(phoneInput.value))) 
+    {
+      alert("Phone number should have +90 code and correct format");
       isOk += 1;
     } 
     if(isOk === 0)
