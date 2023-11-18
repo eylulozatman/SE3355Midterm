@@ -1,61 +1,42 @@
 
-body, html {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
    select{
     margin-left: 2%;
-    width: 15vh;
+    width: max-content;
     height: 6%;
+    font-size: large;
   }
   input{
     margin-left: 2%;
-    width:fit-content;
   }
-  .container {
-    position: absolute; /* veya fixed */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    background: url('Images/bgfoto.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-  }
-  
+ span{
+    position: relative;
+    font-size: 130%;
+    font-weight: 200;
+ }
 
-.menuTab
+ .menuTab
 {
+  
     width: 100%;
     height: 12vh;
+    
     background-color: rgb(4, 1, 15);
   
 }
-
-
 .menuTabList{
 
     width: 100%;
     height: 100%;
     position: relative;
-    list-style: none; 
-    padding: 0; 
-    margin: 0;
+    list-style: none;
     display: flex;
     text-align: left;
- 
 }
-
-@media (max-width: 768px) {
-    .menuTabList {
-        width: 30%;
-    }
-}
-
 
 .menutab-item{
     color: plum;
@@ -64,73 +45,73 @@ body, html {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .menutab-item {
-        font-size: 20px;
-    }
-}
+  .container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 88vh;
+    width: 100%;
+
+    background: url('Images/bgfoto.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center ;
+  }
+  
 
 .contentBox{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 85%;
-    background: transparent;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  max-width: 65%;
+  width: 90%;
+  height: 60%;
+  min-height: 65vh;
+  background: transparent;
+  border: 0.1vw solid rgba(255,255,255,0.5);
+  border-radius: 30px;
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .formBox{
-
-    max-width: 60%;
-    width: 80%;
-    height: 70%;
-    min-height: 55vh;
-    background: transparent;
-    border: 0.1vw solid rgb(4, 1, 15);;
-    border-radius: 30px;
-    backdrop-filter: blur(7px);
-    align-items: center;
-    justify-content: center;
+   
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
     
 }
+
 .inputBox{
-    font-size: larger;
+
     overflow: hidden;
     position: relative;
     margin-left: 30%;
-    margin-top: 3%;
+    margin-top: 2.5%;
     width: 100%;
     color: plum;
 }
 
 #phoneCodesSelect{
-
     width: 6%;
-    height: 23px;
-   
-}
-
-@media screen and (max-width: 768px) {
-    .nameInputs {
-      flex-direction: row; /* For mobile, change direction to row */
-    }
-    .nameInputs input {
-      flex: 1; /* Allow inputs to grow and take equal space */
-      margin: 5px; /* Add space between inputs */
-    }
-  }
-#radioOpt{
-    display: flex;
-}
-
-.registerBtn {
-    
-    margin-top: 20px;
+    height: 23px; 
 }
   
-  #registerButton {
-    width: 20%;
+#radioOpt{
+
+ display: flex;
+
+}
+
+#registerButton {
+    width: fit-content;
     padding: 10px 10px;
     background-color: plum;
     color: white;
@@ -140,9 +121,44 @@ body, html {
     font-size: 16px;
 }
   
-  #registerButton:hover {
+#registerButton:hover {
     background-color: rgb(92, 42, 88);
 }
+
+
+
+@media (max-width: 600px) {
+ 
+
+  .menuTab{
+    width: 100%;
+    margin: 0; 
+
+  }
+  .menuTabList{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .menutab-item{
+    width: 80%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 90%;
+  }
+  .formBox {
+    width: 80%;
+    margin: 0; 
+  }
+  .inputBox {
+   
+    margin-left: 0; 
+    width: 100%; 
+  }
+}
+  
   
 
 

@@ -8,19 +8,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-
-       <div class="menuTab">
+    <div class="menuTab">
         <ul class="menuTabList">
             <li class="menutab-item" data-title="Home">Home</li>
             <li class="menutab-item" data-title="Categories">Categories</li>
             <li class="menutab-item" data-title="About">About</li>
             <li class="menutab-item" data-title="Contact">Contact</li>
-          </ul>
-       </div>
+        </ul>
+    </div>
+    <div class="container">
+       
        <div class="contentBox">
-        <div class="formBox">
+            <div class="formBox">
             <div class="inputBox" id="namelbl">
                 <span> Name </span>
                 <input type="text" id="fname" required>
@@ -55,28 +54,25 @@
                 </select>
             </div>
             <div class="inputBox" id="radioOpt">
-                <label for="gender">Gender:</label><br>
+                <span>Gender</span>
                 <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
+                <span>Male</span>
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
+                <span>Female</span>
             </div>
-              
-              <div class="inputBox" id="radioOpt">
-                <label for="beginner">Are You a Beginner?</label><br>
-                <input type="radio" id="yes" name="beginner" value="yes">
-                <label for="yes">Yes</label><br>
+            <div class="inputBox" id="radioOpt">
+                <span>Are you a beginner</span>
+                <input type="radio" id="no" name="beginner" value="yes">
+                <span> Yes </span>
                 <input type="radio" id="no" name="beginner" value="no">
-                <label for="no">No</label><br>
-              </div>
+               <span>No</span>
+            </div>
 
               <div class="inputBox">
                 <button id="registerButton">Register</button>
-               </div>
-
-       </div>
-       
-       
+             </div>
+            </div>
+        </div>
     </div>
     
 </body>
