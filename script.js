@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
     else {
         alert("registration completed successfully"); 
+         window.open(`success.html`, '_blank'); 
     }
 
   }
