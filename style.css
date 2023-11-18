@@ -14,9 +14,11 @@ body {
 }
 input{
   margin-left: 2%;
+  width: 30%;
 }
 span{
   position: relative;
+  font-family:  'Lucida Sans Regular';
   font-size: 130%;
   font-weight: 200;
 }
@@ -46,6 +48,11 @@ span{
   font-size: 30px;
   cursor: pointer;
 }
+
+.menutab-item:hover{
+  color: rgb(92, 42, 88);
+}
+
 
 .container {
   display: flex;
@@ -78,7 +85,6 @@ flex-direction: column;
  
 width: 100%;
 height: 100%;
-
 display: flex;
 justify-content: center;
 align-items: center;
@@ -92,21 +98,18 @@ flex-direction: column;
   position: relative;
   margin-left: 30%;
   margin-top: 2.5%;
-  width: 100%;
+  width: 70%;
   color: plum;
 }
 
-#phoneCodesSelect{
-  width: 6%;
-  height: 23px; 
-}
 
 #radioOpt{
 
-display: flex;
-
+ display: flex;
 }
-
+.radiobtn{
+  width: min-content;  
+}
 #registerButton {
   width: fit-content;
   padding: 10px 10px;
