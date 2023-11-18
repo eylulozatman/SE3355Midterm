@@ -53,7 +53,8 @@ body {
     min-height: 88vh;
     width: 100%;
 
-    background: url('Images/bgfoto.avif');
+    /* background: url('Images/bgfoto.avif'); */
+    background: url('https://images2.alphacoders.com/115/1153166.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
