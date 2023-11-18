@@ -88,20 +88,23 @@ document.addEventListener('DOMContentLoaded', function() {
   function control() {
 
     let isnull = false;
+    let isOk = 0;
     const emailInput = document.getElementById("emailInput").value; 
     const fnameinput = document.getElementById("fname").value;
     const lnameinput = document.getElementById("lname").value;
     const phoneInput = document.getElementById("phoneInput");
 
+
     if (fnameinput === "" || lnameinput === "" || emailInput === "" || phoneInput === "") 
     {
         isnull = true;
         alert("Required fields cannot be empty");
-       
+        isOk += 1;
     }
     
     if ((isnull === false ) && ( !emailInput.includes('@') ||  !emailInput.includes('.com'))) {
        alert("Please enter a valid email!");
+       isOk +=1;
     } 
   
      const phoneValidationMessage = document.getElementById("phoneValidationMessage");
@@ -109,8 +112,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if ((isnull=== false) && (phoneCodesSelect.value !== "+90" || phoneInput.value.length !== 10 || isNaN(phoneInput.value))) {
       alert("Phone number should have +90 code and should be 10 correct format");
+      isOk += 1;
     } 
-    else {
+    if(isOk === 0)
+    {
         alert("registration completed successfully"); 
          window.open(`success.html`, '_blank'); 
     }
