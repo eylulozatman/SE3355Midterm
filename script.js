@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const [companiesRes, phoneCodesRes, subjectsRes] = await Promise.all([
         fetch('https://run.mocky.io/v3/42e20875-9439-4ba3-b5d9-7613b6d34733'),
         fetch('https://run.mocky.io/v3/01187235-9fe2-431c-a46c-49e411574183'),
-        fetch('https://run.mocky.io/v3/e8572994-5439-4cce-b419-43acfe57247d')
+        fetch('https://run.mocky.io/v3/5bd816c2-e740-4244-a3e8-9b3fa2322662')
       ]);
   
       const [companiesData, phoneCodesData, subjectsData] = await Promise.all([
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   
       if (subjectsRes.ok) {
-        populateSubjectsDropdown(subjectsData.subjects);
+        populateSubjectsDropdown(subjectsData.courses);
       } else {
         console.error("Failed to fetch subjects data");
       }
